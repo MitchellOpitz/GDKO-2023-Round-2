@@ -568,6 +568,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   collisionRadius: 0.5
+  coyoteTime: 0.2
 --- !u!1 &877218354
 GameObject:
   m_ObjectHideFlags: 0
