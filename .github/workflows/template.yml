@@ -77,6 +77,6 @@ jobs:
          BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_API_KEY }}
          CHANNEL: HTML
          ITCH_GAME: gdko-2023-round-2
-         ITCH_USER: mitchell-opitz
+         ITCH_USER: mitchellopitz
          BRANCH: itch-io
          PACKAGE: build/WebGL
