@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.25
   frequency: 0.5
+  nextCollectible: {fileID: 0}
 --- !u!58 &1178632818198884317
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -213,7 +214,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
