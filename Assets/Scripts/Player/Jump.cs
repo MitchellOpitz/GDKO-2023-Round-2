@@ -10,10 +10,12 @@ public class Jump : MonoBehaviour
     public LayerMask collsionLayer;
     public float collisionRadius;
     public float coyoteTime;
+    public float jumpBufferTime;
 
     private Rigidbody2D rb;
     private bool isStanding;
     private float coyoteTimeCounter;
+    private float jumpBufferCounter;
 
     private void Start()
     {
@@ -30,9 +32,18 @@ public class Jump : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Jump") && coyoteTimeCounter > 0f)
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        } else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            jumpBufferCounter = 0f;
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
