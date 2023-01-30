@@ -6,6 +6,7 @@ public class Collectibles : MonoBehaviour
 {
     public float amplitude;
     public float frequency;
+    public GameObject nextCollectible;
 
     private Vector3 startingPosition;
     private Vector3 tempPosition;
@@ -30,6 +31,7 @@ public class Collectibles : MonoBehaviour
         {
             Debug.Log("Collected!");
             //FindObjectOfType<AudioManager>().PlaySound("Temp Collectible");
+            nextCollectible.SetActive(true);
             Destroy(gameObject);
         }
     }
