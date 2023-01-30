@@ -22,8 +22,12 @@ public class Jump : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isStanding)
         {
-            Debug.Log("Jump pressed.");
-            rb.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
     }
 
