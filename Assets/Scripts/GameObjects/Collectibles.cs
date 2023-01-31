@@ -7,6 +7,7 @@ public class Collectibles : MonoBehaviour
     public float amplitude;
     public float frequency;
     public GameObject nextCollectible;
+    public string colorUnlocked;
 
     private Vector3 startingPosition;
     private Vector3 tempPosition;
@@ -28,11 +29,20 @@ public class Collectibles : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-        {
-            Debug.Log("Collected!");
+        {            
             //FindObjectOfType<AudioManager>().PlaySound("Temp Collectible");
             nextCollectible.SetActive(true);
+            ColorUnlock();
             Destroy(gameObject);
+        }
+    }
+
+    private void ColorUnlock()
+    {
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag(colorUnlocked);
+        foreach (GameObject obstacle in obstacles)
+        {
+            obstacle.GetComponent<Activation>().Activate();
         }
     }
 }
