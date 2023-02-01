@@ -14,8 +14,13 @@ public class Activation : MonoBehaviour
 
     public Color thisColor;
 
-    public void Activate()
+    public void Activate(string colorUnlocked)
     {
         this.GetComponent<SpriteRenderer>().color = thisColor;
+
+        if (colorUnlocked == "Green")
+        {
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        }
     }
 }

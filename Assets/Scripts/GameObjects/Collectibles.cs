@@ -56,7 +56,7 @@ public class Collectibles : MonoBehaviour
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag(colorUnlocked);
         foreach (GameObject obstacle in obstacles)
         {
-            obstacle.GetComponent<Activation>().Activate();
+            obstacle.GetComponent<Activation>().Activate(colorUnlocked);
         }
     }
 }
