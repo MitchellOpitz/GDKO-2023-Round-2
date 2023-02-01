@@ -12,13 +12,21 @@ public class Collectibles : MonoBehaviour
 
     private Vector3 startingPosition;
     private Vector3 tempPosition;
+    private GameObject mainCamera;
     private AudioSource audioSource;
+    private Color myColor;
+    private float H;
+    private float S;
+    private float V;
 
     // Start is called before the first frame update
     void Start()
     {
         startingPosition = transform.position;
-        audioSource = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+        mainCamera = GameObject.Find("Main Camera");
+        audioSource = mainCamera.GetComponent<AudioSource>();
+        myColor = GetComponent<SpriteRenderer>().color;
+        Color.RGBToHSV(myColor, out H, out S, out V);
     }
 
     // Update is called once per frame
@@ -36,6 +44,7 @@ public class Collectibles : MonoBehaviour
             audioSource.Stop();
             audioSource.clip = audioTrack;
             audioSource.Play();
+            mainCamera.GetComponent<Camera>().backgroundColor = Color.HSVToRGB(H,S,.15f);
             nextCollectible.SetActive(true);
             ColorUnlock();
             Destroy(gameObject);

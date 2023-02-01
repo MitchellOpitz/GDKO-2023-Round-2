@@ -12114,6 +12114,18 @@ PrefabInstance:
       propertyPath: nextCollectible
       value: 
       objectReference: {fileID: 1646127389}
+    - target: {fileID: 1178632818198884318, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884318, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884318, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5921569
+      objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884319, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_RootOrder
       value: 0
