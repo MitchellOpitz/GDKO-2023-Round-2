@@ -261,6 +261,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e380b3dd539d20941b2f0e1fedf5cdfb, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -273,8 +277,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: 64eeb855ec3515142941dbbb255c6c0d, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible
@@ -356,6 +368,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a73d5ca300d043a4c9d652a0a8346fc5, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -368,8 +384,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: 331092640ffaba646914b1125d5903e1, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Pink
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible
@@ -451,6 +475,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdcbe716b578ce1479383e397fb0c59a, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -463,8 +491,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: c01518e381c54534b9fcb009d3deeba8, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible
@@ -767,6 +803,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420029}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -774,6 +811,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!82 &519420029
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,6 +1633,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 25f9b1300602a2c4d8be604dc3d744c6, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -1512,8 +1649,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: 53922eebd1072f04c9994385d88c6c7c, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible
@@ -1978,6 +2123,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ffc0c0ee8955de4419e34b1c76c66a47, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -1990,8 +2139,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: a2f375608532d564ab9d4313d0984ca0, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible
@@ -6877,6 +7034,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 331092640ffaba646914b1125d5903e1, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -6972,6 +7133,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1990765454}
     m_Modifications:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 189e9cebda045784da6cf4bd7cf3f6ca, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.25
       objectReference: {fileID: 0}
@@ -6984,8 +7149,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c6f8dd38ba99234e801b0a65e5b4990, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible
@@ -11517,7 +11690,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757da61c1082e7141b5c1ec752eb8748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: 1
+    clip: {fileID: 8300000, guid: a4c3c5f85772c484ca755e7cc4a3cbaf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 2
+    clip: {fileID: 8300000, guid: 7c6f8dd38ba99234e801b0a65e5b4990, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 3
+    clip: {fileID: 8300000, guid: c01518e381c54534b9fcb009d3deeba8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 4
+    clip: {fileID: 8300000, guid: a2f375608532d564ab9d4313d0984ca0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 5
+    clip: {fileID: 8300000, guid: 64eeb855ec3515142941dbbb255c6c0d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 6
+    clip: {fileID: 8300000, guid: 53922eebd1072f04c9994385d88c6c7c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 7
+    clip: {fileID: 8300000, guid: 331092640ffaba646914b1125d5903e1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!1 &1757094406
 GameObject:
   m_ObjectHideFlags: 0
@@ -11868,8 +12083,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 36c3c37ac05745d4bb8d1c3efa367085, type: 3}
+    - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
@@ -11880,8 +12099,16 @@ PrefabInstance:
       value: PurpleCollectible
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: a4c3c5f85772c484ca755e7cc4a3cbaf, type: 3}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
+      propertyPath: audioTrackName
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: nextCollectible

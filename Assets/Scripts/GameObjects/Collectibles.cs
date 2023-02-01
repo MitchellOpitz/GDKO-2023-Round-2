@@ -8,14 +8,17 @@ public class Collectibles : MonoBehaviour
     public float frequency;
     public GameObject nextCollectible;
     public string colorUnlocked;
+    public AudioClip audioTrack;
 
     private Vector3 startingPosition;
     private Vector3 tempPosition;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         startingPosition = transform.position;
+        audioSource = GameObject.Find("Main Camera").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,8 +32,10 @@ public class Collectibles : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-        {            
-            //FindObjectOfType<AudioManager>().PlaySound("Temp Collectible");
+        {
+            audioSource.Stop();
+            audioSource.clip = audioTrack;
+            audioSource.Play();
             nextCollectible.SetActive(true);
             ColorUnlock();
             Destroy(gameObject);
