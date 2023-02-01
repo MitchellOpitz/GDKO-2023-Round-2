@@ -23,4 +23,20 @@ public class HorizontalMovement : MonoBehaviour
         transform.position = startPosition + new Vector3(distance * Mathf.Sin((Mathf.PI * 2) / cycleTime * timeSinceStart), 0f, 0f);
         timeSinceStart += Time.deltaTime;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.transform.parent = transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.transform.parent = null;
+        }
+    }
 }
