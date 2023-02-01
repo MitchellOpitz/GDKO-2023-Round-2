@@ -18,6 +18,16 @@ public class Activation : MonoBehaviour
     {
         this.GetComponent<SpriteRenderer>().color = thisColor;
 
+        if (colorUnlocked == "Purple")
+        {
+            GetComponent<HorizontalMovement>().enabled = true;
+        }
+
+        if (colorUnlocked == "Blue")
+        {
+            GetComponent<VerticalMovement>().enabled = true;
+        }
+
         if (colorUnlocked == "Green")
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
