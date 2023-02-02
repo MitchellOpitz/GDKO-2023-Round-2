@@ -48,14 +48,8 @@ public class Collectibles : MonoBehaviour
             audioSource.Stop();
             audioSource.clip = audioTrack;
             audioSource.Play();
-            if (isPurple)
-            {
-                Color.RGBToHSV(mainCamera.GetComponent<Camera>().backgroundColor, out trash, out trash, out V);
-            } else
-            {
-                Color.RGBToHSV(mainCamera.GetComponent<Camera>().backgroundColor, out trash, out S, out V);
-            }
-            mainCamera.GetComponent<Camera>().backgroundColor = Color.HSVToRGB(H, S - Sshift, V + Vshift);
+            Color.RGBToHSV(mainCamera.GetComponent<Camera>().backgroundColor, out H, out S, out V);
+            mainCamera.GetComponent<Camera>().backgroundColor = Color.HSVToRGB(H, S, V + .03f);
             nextCollectible.SetActive(true);
             ColorUnlock();
             Destroy(gameObject);
