@@ -5,6 +5,7 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     public Door door;
+    public GameObject wire;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class Button : MonoBehaviour
         if (this.enabled && collision.gameObject.CompareTag("Player"))
         {
             door.OpenDoor();
+            Destroy(wire);
             Destroy(gameObject);
         }
     }

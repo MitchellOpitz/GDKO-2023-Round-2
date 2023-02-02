@@ -16,7 +16,10 @@ public class Activation : MonoBehaviour
 
     public void Activate(string colorUnlocked)
     {
-        this.GetComponent<SpriteRenderer>().color = thisColor;
+        if (GetComponent<SpriteRenderer>())
+        {
+            GetComponent<SpriteRenderer>().color = thisColor;
+        }
 
         if (colorUnlocked == "Purple")
         {
@@ -32,9 +35,15 @@ public class Activation : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
+
         if (colorUnlocked == "Yellow" && GetComponent<Button>())
         {
             GetComponent<Button>().enabled = true;
+        }
+
+        if (colorUnlocked == "Yellow" && GetComponent<LineRenderer>())
+        {
+            GetComponent<LineRenderer>().enabled = true;
         }
     }
 }
