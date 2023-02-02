@@ -9,6 +9,9 @@ public class Collectibles : MonoBehaviour
     public GameObject nextCollectible;
     public string colorUnlocked;
     public AudioClip audioTrack;
+    public float Sshift = .1f;
+    public float Vshift = .1f;
+    public bool isPurple;
 
     private Vector3 startingPosition;
     private Vector3 tempPosition;
@@ -18,6 +21,7 @@ public class Collectibles : MonoBehaviour
     private float H;
     private float S;
     private float V;
+    private float trash;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +48,14 @@ public class Collectibles : MonoBehaviour
             audioSource.Stop();
             audioSource.clip = audioTrack;
             audioSource.Play();
-            mainCamera.GetComponent<Camera>().backgroundColor = Color.HSVToRGB(H,S,.15f);
+            if (isPurple)
+            {
+                Color.RGBToHSV(mainCamera.GetComponent<Camera>().backgroundColor, out trash, out trash, out V);
+            } else
+            {
+                Color.RGBToHSV(mainCamera.GetComponent<Camera>().backgroundColor, out trash, out S, out V);
+            }
+            mainCamera.GetComponent<Camera>().backgroundColor = Color.HSVToRGB(H, S - Sshift, V + Vshift);
             nextCollectible.SetActive(true);
             ColorUnlock();
             Destroy(gameObject);

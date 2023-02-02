@@ -21,6 +21,13 @@ public class Activation : MonoBehaviour
             GetComponent<SpriteRenderer>().color = thisColor;
         }
 
+        if (GetComponent<LineRenderer>())
+        {
+            GetComponent<LineRenderer>().enabled = true;
+            GetComponent<LineRenderer>().startColor = thisColor;
+            GetComponent<LineRenderer>().endColor = thisColor;
+        }
+
         if (colorUnlocked == "Purple")
         {
             GetComponent<HorizontalMovement>().enabled = true;
@@ -39,11 +46,6 @@ public class Activation : MonoBehaviour
         if (colorUnlocked == "Yellow" && GetComponent<Button>())
         {
             GetComponent<Button>().enabled = true;
-        }
-
-        if (colorUnlocked == "Yellow" && GetComponent<LineRenderer>())
-        {
-            GetComponent<LineRenderer>().enabled = true;
         }
     }
 }
