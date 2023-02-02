@@ -32,5 +32,9 @@ public class Activation : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
+        if (colorUnlocked == "Yellow" && GetComponent<Button>())
+        {
+            GetComponent<Button>().enabled = true;
+        }
     }
 }
