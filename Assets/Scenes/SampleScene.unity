@@ -729,7 +729,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6982,7 +6982,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 189e9cebda045784da6cf4bd7cf3f6ca, type: 3}
+      objectReference: {fileID: 8300000, guid: 4716b6c78a730c546af0399cb7be9477, type: 3}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 1
@@ -7006,7 +7006,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: audioTrack
       value: 
-      objectReference: {fileID: 8300000, guid: 7c6f8dd38ba99234e801b0a65e5b4990, type: 3}
+      objectReference: {fileID: 8300000, guid: 43dbcd3bf8b71454da3c332b65cf156a, type: 3}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Blue
@@ -12505,7 +12505,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 36c3c37ac05745d4bb8d1c3efa367085, type: 3}
+      objectReference: {fileID: 8300000, guid: ab24352fe12f8ad4cbe0f11437e233f2, type: 3}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 1
@@ -12537,7 +12537,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: audioTrack
       value: 
-      objectReference: {fileID: 8300000, guid: a4c3c5f85772c484ca755e7cc4a3cbaf, type: 3}
+      objectReference: {fileID: 8300000, guid: ab24352fe12f8ad4cbe0f11437e233f2, type: 3}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Purple
