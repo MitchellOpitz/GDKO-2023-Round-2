@@ -505,7 +505,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: fdcbe716b578ce1479383e397fb0c59a, type: 3}
+      objectReference: {fileID: 8300000, guid: 32098c80cbb1ff3439c2ae347fc94d12, type: 3}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 1
@@ -529,7 +529,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: audioTrack
       value: 
-      objectReference: {fileID: 8300000, guid: c01518e381c54534b9fcb009d3deeba8, type: 3}
+      objectReference: {fileID: 8300000, guid: eedf52d486f422f4ba3cc70c899c814a, type: 3}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Green
@@ -1197,7 +1197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679694115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.91, y: -7.34, z: 0}
+  m_LocalPosition: {x: 2.93, y: -11.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1809,7 +1809,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: ffc0c0ee8955de4419e34b1c76c66a47, type: 3}
+      objectReference: {fileID: 8300000, guid: 16aac44e60fb9474d98b70ae75116710, type: 3}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 1
