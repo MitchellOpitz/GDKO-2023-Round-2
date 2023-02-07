@@ -267,7 +267,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: e380b3dd539d20941b2f0e1fedf5cdfb, type: 3}
+      objectReference: {fileID: 8300000, guid: b699cfc6968c10d48a6c2aee5fce8f8f, type: 3}
     - target: {fileID: 1178632818198884291, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 1
@@ -291,7 +291,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: audioTrack
       value: 
-      objectReference: {fileID: 8300000, guid: 64eeb855ec3515142941dbbb255c6c0d, type: 3}
+      objectReference: {fileID: 8300000, guid: ca41cc905e8fc854ba6a546e66a6590c, type: 3}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Orange
@@ -1833,7 +1833,7 @@ PrefabInstance:
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: audioTrack
       value: 
-      objectReference: {fileID: 8300000, guid: a2f375608532d564ab9d4313d0984ca0, type: 3}
+      objectReference: {fileID: 8300000, guid: 702ba02172806354cabf1dbb64fd8d41, type: 3}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: colorUnlocked
       value: Yellow
