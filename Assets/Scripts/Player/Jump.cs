@@ -43,6 +43,7 @@ public class Jump : MonoBehaviour
         if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            FindObjectOfType<AudioManager>().PlaySound(jumpSound);
             jumpBufferCounter = 0f;
         }
 
