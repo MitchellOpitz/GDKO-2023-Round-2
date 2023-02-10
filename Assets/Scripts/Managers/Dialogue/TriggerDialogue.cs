@@ -18,6 +18,7 @@ public class TriggerDialogue : MonoBehaviour
         if (collision.tag == "Player")
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            Destroy(gameObject);
         }
     }
 }

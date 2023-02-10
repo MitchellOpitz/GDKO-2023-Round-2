@@ -14,14 +14,11 @@ public class DialogueManager : MonoBehaviour
         tmp.color = new Color(1f, 1f, 1f, 1f);
         tmp.text = dialogue.text;
         StartCoroutine(FadeOut());
-        Debug.Log("Left IEnum.");
     }
 
     IEnumerator FadeOut()
     {
-        Debug.Log("Triggered IEnum.");
         yield return new WaitForSeconds(5f);
-        Debug.Log("Waited 3 seconds.");
         float textAlpha = 1f;
 
         for (float t = 0f; t < 1f; t += Time.deltaTime / fadeTime)

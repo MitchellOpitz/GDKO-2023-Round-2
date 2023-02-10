@@ -8,6 +8,5 @@ public class Dialogue
     public Dialogue(string text)
     {
         this.text = text;
-        Debug.Log("Text set to: " + text);
     }
 }
