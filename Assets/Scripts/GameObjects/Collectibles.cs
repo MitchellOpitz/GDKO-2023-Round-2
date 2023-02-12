@@ -14,6 +14,7 @@ public class Collectibles : MonoBehaviour
     public bool isPurple;
 
     private Vector3 startingPosition;
+    private Vector3 startPosition;
     private Vector3 tempPosition;
     private GameObject mainCamera;
     private AudioSource audioSource;
@@ -27,6 +28,7 @@ public class Collectibles : MonoBehaviour
     void Start()
     {
         startingPosition = transform.position;
+        startPosition = transform.position;
         mainCamera = GameObject.Find("Main Camera");
         audioSource = mainCamera.GetComponent<AudioSource>();
         myColor = GetComponent<SpriteRenderer>().color;
@@ -46,22 +48,35 @@ public class Collectibles : MonoBehaviour
         if (collision.tag == "Player")
         {
             audioSource.Stop();
-            audioSource.clip = audioTrack;
-            audioSource.Play();
-            Color.RGBToHSV(mainCamera.GetComponent<Camera>().backgroundColor, out H, out S, out V);
-            mainCamera.GetComponent<Camera>().backgroundColor = Color.HSVToRGB(H, S, V + .03f);
-            nextCollectible.SetActive(true);
-            ColorUnlock();
-            Destroy(gameObject);
+            FindObjectOfType<CollectibleAnimation>().StartAnimation(audioTrack, startPosition);
+            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<AudioSource>().enabled = false;
+            StartCoroutine(ColorUnlock());
         }
     }
 
-    private void ColorUnlock()
+    IEnumerator ColorUnlock()
     {
+        yield return new WaitForSeconds(5f);
+        nextCollectible.SetActive(true);
+        TriggerDialogue[] dialogues = FindObjectsOfType<TriggerDialogue>();
+        foreach (TriggerDialogue dialogue in dialogues)
+        {
+            //Debug.Log(dialogue);
+            if (dialogue.tag == colorUnlocked)
+            {
+                dialogue.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            }
+        }
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag(colorUnlocked);
         foreach (GameObject obstacle in obstacles)
         {
-            obstacle.GetComponent<Activation>().Activate(colorUnlocked);
+            if (obstacle.GetComponent<Activation>())
+            {
+                obstacle.GetComponent<Activation>().Activate(colorUnlocked);
+            }
         }
+        Destroy(gameObject);
     }
 }
