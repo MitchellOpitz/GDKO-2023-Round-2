@@ -66,7 +66,13 @@ public class Collectibles : MonoBehaviour
             //Debug.Log(dialogue);
             if (dialogue.tag == colorUnlocked)
             {
-                dialogue.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                if (dialogue.lastOne)
+                {
+                    dialogue.WaitTimer();
+                } else
+                {
+                    dialogue.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                }
             }
         }
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag(colorUnlocked);

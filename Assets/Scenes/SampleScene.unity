@@ -5232,6 +5232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: What's going on here!?  Get me down!
+  lastOne: 0
 --- !u!61 &77935170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5961,6 +5962,78 @@ Transform:
   m_Father: {fileID: 436884699}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &250508509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250508510}
+  - component: {fileID: 250508512}
+  - component: {fileID: 250508511}
+  m_Layer: 0
+  m_Name: DialogueBox8
+  m_TagString: Purple
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &250508510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250508509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250508511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250508509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: I hear something else up ahead.
+  lastOne: 0
+--- !u!61 &250508512
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250508509}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 49.05184, y: 8.22319}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.861191, y: 3.6499634}
+  m_EdgeRadius: 0
 --- !u!1001 &271451965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6260,6 +6333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: I can't leave now.  Maybe I should keep going.
+  lastOne: 0
 --- !u!61 &350217292
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6267,13 +6341,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350217289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -86.96771, y: 8.909365}
+  m_Offset: {x: -105.75501, y: 8.909365}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6284,7 +6358,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0923462, y: 5.672901}
+  m_Size: {x: 1.2082367, y: 5.672901}
   m_EdgeRadius: 0
 --- !u!1 &380400773
 GameObject:
@@ -7294,6 +7368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: What IS that noise!?
+  lastOne: 0
 --- !u!61 &543289382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7883,7 +7958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679694115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.42, y: -65.8, z: 0}
+  m_LocalPosition: {x: 444.8, y: -67.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 66666219}
@@ -8085,6 +8160,150 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1178632818198884319, guid: e03cd927950f03847883fa09283fed06, type: 3}
   m_PrefabInstance: {fileID: 720940151}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &728466800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728466801}
+  - component: {fileID: 728466803}
+  - component: {fileID: 728466802}
+  m_Layer: 0
+  m_Name: DialogueBox15
+  m_TagString: Green
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &728466801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728466800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &728466802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728466800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: I hear another.  It kind of sits on top.
+  lastOne: 0
+--- !u!61 &728466803
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728466800}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 303.1153, y: 17.621504}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5441895, y: 7.8713875}
+  m_EdgeRadius: 0
+--- !u!1 &780678209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780678210}
+  - component: {fileID: 780678212}
+  - component: {fileID: 780678211}
+  m_Layer: 0
+  m_Name: DialogueBox12
+  m_TagString: Blue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780678210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780678209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &780678211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780678209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: No...  I can FEEL another.
+  lastOne: 0
+--- !u!61 &780678212
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780678209}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 186.05084, y: 15.069439}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.609436, y: 6.0474014}
+  m_EdgeRadius: 0
 --- !u!1 &836111136
 GameObject:
   m_ObjectHideFlags: 0
@@ -8264,6 +8483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: What was THAT!?
+  lastOne: 0
 --- !u!61 &840187430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8277,7 +8497,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -18.047035, y: 9.072012}
+  m_Offset: {x: -18.047035, y: 6.4635963}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8288,7 +8508,79 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.866226, y: 5.3476067}
+  m_Size: {x: 7.866226, y: 0.13077545}
+  m_EdgeRadius: 0
+--- !u!1 &870835746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870835747}
+  - component: {fileID: 870835749}
+  - component: {fileID: 870835748}
+  m_Layer: 0
+  m_Name: DialogueBox19
+  m_TagString: Yellow
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &870835747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870835746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 430.4, y: -69.5, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &870835748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870835746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: This really is the end of the game.
+  lastOne: 1
+--- !u!61 &870835749
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870835746}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 28.12468, y: 5.5090637}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7917175, y: 7.74527}
   m_EdgeRadius: 0
 --- !u!1 &877218354
 GameObject:
@@ -8787,6 +9079,78 @@ Transform:
   m_Father: {fileID: 436884699}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &937829149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937829150}
+  - component: {fileID: 937829152}
+  - component: {fileID: 937829151}
+  m_Layer: 0
+  m_Name: DialogueBox16
+  m_TagString: Yellow
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &937829150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937829149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937829151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937829149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: What do you mean END!?
+  lastOne: 0
+--- !u!61 &937829152
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937829149}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 343.95435, y: 6.392105}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.20752, y: 0.6871643}
+  m_EdgeRadius: 0
 --- !u!1 &979221532
 GameObject:
   m_ObjectHideFlags: 0
@@ -9212,7 +9576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884312, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1178632818198884316, guid: e03cd927950f03847883fa09283fed06, type: 3}
       propertyPath: Sshift
@@ -15322,6 +15686,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bc62de62e2df24f81f849796a664e1, type: 3}
+--- !u!1 &1237657370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237657371}
+  - component: {fileID: 1237657373}
+  - component: {fileID: 1237657372}
+  m_Layer: 0
+  m_Name: DialogueBox9
+  m_TagString: Blue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1237657371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237657370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237657372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237657370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: Amazing!  The sounds must be coming from those orbs.
+  lastOne: 0
+--- !u!61 &1237657373
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237657370}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 103.78741, y: 6.264469}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.396622, y: 0.463768}
+  m_EdgeRadius: 0
 --- !u!1 &1290058636
 GameObject:
   m_ObjectHideFlags: 0
@@ -36882,6 +37318,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 360, y: -72, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 361, y: -72, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -78103,17 +78549,17 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 6175
+  - m_RefCount: 6176
     m_Data: {fileID: 11400000, guid: e767bd95167048044a2462e2f3fa0929, type: 2}
   - m_RefCount: 20
     m_Data: {fileID: 11400000, guid: a1eef0f5d82854246a65fc2c994a1768, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 6175
+  - m_RefCount: 6176
     m_Data: {fileID: 21300000, guid: 1e00408a9931b95488e68093d823980c, type: 3}
   - m_RefCount: 20
     m_Data: {fileID: 21300000, guid: caf31e9fb41158f48ae9f60aff4aa0de, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 6195
+  - m_RefCount: 6196
     m_Data:
       e00: 1
       e01: 0
@@ -78132,7 +78578,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 6175
+  - m_RefCount: 6176
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 20
     m_Data: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
@@ -79066,8 +79512,22 @@ CompositeCollider2D:
         Y: -720000041
       - X: 3950000028
         Y: -719999900
-      - X: 3609999972
+      - X: 3640000100
         Y: -719999900
+      - X: 3640000100
+        Y: -720000041
+      - X: 3640000041
+        Y: -720000100
+      - X: 3619999959
+        Y: -720000100
+      - X: 3619999900
+        Y: -720000041
+      - X: 3619999900
+        Y: -709999959
+      - X: 3619999959
+        Y: -709999900
+      - X: 3609999972
+        Y: -709999900
       - X: 3609999972
         Y: -679999959
       - X: 3609999913
@@ -79212,6 +79672,86 @@ CompositeCollider2D:
         Y: -720000041
       - X: 2769999913
         Y: -720000100
+    - - X: 4470000228
+        Y: -610000041
+      - X: 4470000228
+        Y: -599999959
+      - X: 4470000169
+        Y: -599999900
+      - X: 4440000100
+        Y: -599999900
+      - X: 4440000100
+        Y: -580000100
+      - X: 4449999913
+        Y: -580000100
+      - X: 4449999972
+        Y: -580000041
+      - X: 4449999972
+        Y: -569999959
+      - X: 4449999913
+        Y: -569999900
+      - X: 4440000100
+        Y: -569999900
+      - X: 4440000100
+        Y: -550000100
+      - X: 4470000169
+        Y: -550000100
+      - X: 4470000228
+        Y: -550000041
+      - X: 4470000228
+        Y: -539999959
+      - X: 4470000169
+        Y: -539999900
+      - X: 4430000087
+        Y: -539999900
+      - X: 4430000028
+        Y: -539999959
+      - X: 4430000028
+        Y: -610000041
+      - X: 4430000087
+        Y: -610000100
+      - X: 4470000169
+        Y: -610000100
+    - - X: 4569999972
+        Y: -610000041
+      - X: 4569999972
+        Y: -600000100
+      - X: 4579999785
+        Y: -600000100
+      - X: 4579999844
+        Y: -600000041
+      - X: 4579999844
+        Y: -590000100
+      - X: 4590000169
+        Y: -590000100
+      - X: 4590000228
+        Y: -590000041
+      - X: 4590000228
+        Y: -559999959
+      - X: 4590000169
+        Y: -559999900
+      - X: 4579999844
+        Y: -559999900
+      - X: 4579999844
+        Y: -549999959
+      - X: 4579999785
+        Y: -549999900
+      - X: 4569999972
+        Y: -549999900
+      - X: 4569999972
+        Y: -539999959
+      - X: 4569999913
+        Y: -539999900
+      - X: 4540000215
+        Y: -539999900
+      - X: 4540000156
+        Y: -539999959
+      - X: 4540000156
+        Y: -610000041
+      - X: 4540000215
+        Y: -610000100
+      - X: 4569999913
+        Y: -610000100
     - - X: 4489999972
         Y: -610000041
       - X: 4489999972
@@ -79275,86 +79815,6 @@ CompositeCollider2D:
       - X: 4479999959
         Y: -610000100
       - X: 4489999913
-        Y: -610000100
-    - - X: 4569999972
-        Y: -610000041
-      - X: 4569999972
-        Y: -600000100
-      - X: 4579999785
-        Y: -600000100
-      - X: 4579999844
-        Y: -600000041
-      - X: 4579999844
-        Y: -590000100
-      - X: 4590000169
-        Y: -590000100
-      - X: 4590000228
-        Y: -590000041
-      - X: 4590000228
-        Y: -559999959
-      - X: 4590000169
-        Y: -559999900
-      - X: 4579999844
-        Y: -559999900
-      - X: 4579999844
-        Y: -549999959
-      - X: 4579999785
-        Y: -549999900
-      - X: 4569999972
-        Y: -549999900
-      - X: 4569999972
-        Y: -539999959
-      - X: 4569999913
-        Y: -539999900
-      - X: 4540000215
-        Y: -539999900
-      - X: 4540000156
-        Y: -539999959
-      - X: 4540000156
-        Y: -610000041
-      - X: 4540000215
-        Y: -610000100
-      - X: 4569999913
-        Y: -610000100
-    - - X: 4470000228
-        Y: -610000041
-      - X: 4470000228
-        Y: -599999959
-      - X: 4470000169
-        Y: -599999900
-      - X: 4440000100
-        Y: -599999900
-      - X: 4440000100
-        Y: -580000100
-      - X: 4449999913
-        Y: -580000100
-      - X: 4449999972
-        Y: -580000041
-      - X: 4449999972
-        Y: -569999959
-      - X: 4449999913
-        Y: -569999900
-      - X: 4440000100
-        Y: -569999900
-      - X: 4440000100
-        Y: -550000100
-      - X: 4470000169
-        Y: -550000100
-      - X: 4470000228
-        Y: -550000041
-      - X: 4470000228
-        Y: -539999959
-      - X: 4470000169
-        Y: -539999900
-      - X: 4430000087
-        Y: -539999900
-      - X: 4430000028
-        Y: -539999959
-      - X: 4430000028
-        Y: -610000041
-      - X: 4430000087
-        Y: -610000100
-      - X: 4470000169
         Y: -610000100
     - - X: 4550000228
         Y: -599999900
@@ -79489,7 +79949,9 @@ CompositeCollider2D:
       - {x: 400.99997, y: -67.999985}
       - {x: 397, y: -68.00003}
       - {x: 396.99997, y: -72.000015}
-      - {x: 361, y: -71.99996}
+      - {x: 362, y: -71.99998}
+      - {x: 361.99997, y: -70.999985}
+      - {x: 361, y: -70.99996}
       - {x: 360.99997, y: -67.999985}
       - {x: 357, y: -68.00003}
       - {x: 356.99994, y: -71.999985}
@@ -79688,22 +80150,6 @@ CompositeCollider2D:
       - {x: 451.00003, y: -58.00002}
       - {x: 451.00003, y: -60.000015}
       - {x: 452, y: -60.00004}
-    - - {x: 449, y: -61.000015}
-      - {x: 449.00003, y: -57.000015}
-      - {x: 449.99997, y: -56.99998}
-      - {x: 449.99997, y: -54.99999}
-      - {x: 449, y: -54.99996}
-      - {x: 449, y: -53.99999}
-      - {x: 448, y: -54.000027}
-      - {x: 448, y: -61.000015}
-    - - {x: 457, y: -61.000015}
-      - {x: 457, y: -59.99999}
-      - {x: 455.00003, y: -59.99996}
-      - {x: 455.00006, y: -55.000015}
-      - {x: 457, y: -54.99998}
-      - {x: 457, y: -53.99999}
-      - {x: 454.00003, y: -54.000027}
-      - {x: 454.00003, y: -61.000015}
     - - {x: 447.00003, y: -61.000015}
       - {x: 447.00003, y: -59.99999}
       - {x: 444, y: -59.99996}
@@ -79716,6 +80162,22 @@ CompositeCollider2D:
       - {x: 447.00003, y: -53.99999}
       - {x: 443.00003, y: -54.000027}
       - {x: 443.00003, y: -61.000015}
+    - - {x: 457, y: -61.000015}
+      - {x: 457, y: -59.99999}
+      - {x: 455.00003, y: -59.99996}
+      - {x: 455.00006, y: -55.000015}
+      - {x: 457, y: -54.99998}
+      - {x: 457, y: -53.99999}
+      - {x: 454.00003, y: -54.000027}
+      - {x: 454.00003, y: -61.000015}
+    - - {x: 449, y: -61.000015}
+      - {x: 449.00003, y: -57.000015}
+      - {x: 449.99997, y: -56.99998}
+      - {x: 449.99997, y: -54.99999}
+      - {x: 449, y: -54.99996}
+      - {x: 449, y: -53.99999}
+      - {x: 448, y: -54.000027}
+      - {x: 448, y: -61.000015}
     - - {x: 457.99997, y: -56.000015}
       - {x: 457.99997, y: -54.99999}
       - {x: 457, y: -55.00002}
@@ -80007,6 +80469,78 @@ Transform:
   m_Father: {fileID: 436884699}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1561225215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561225216}
+  - component: {fileID: 1561225218}
+  - component: {fileID: 1561225217}
+  m_Layer: 0
+  m_Name: DialogueBox18
+  m_TagString: Yellow
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1561225216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561225215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1561225217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561225215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: A door that goes nowhere?  Useless developer.
+  lastOne: 0
+--- !u!61 &1561225218
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561225215}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 361.891, y: 4.394127}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5102539, y: 4.6831207}
+  m_EdgeRadius: 0
 --- !u!1 &1578127220
 GameObject:
   m_ObjectHideFlags: 0
@@ -80785,6 +81319,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1094697043}
   wire: {fileID: 1332582794}
+--- !u!1 &1740802332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740802333}
+  - component: {fileID: 1740802335}
+  - component: {fileID: 1740802334}
+  m_Layer: 0
+  m_Name: DialogueBox13
+  m_TagString: Green
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740802333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740802332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740802334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740802332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: GREEN
+  lastOne: 0
+--- !u!61 &1740802335
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740802332}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 223.75932, y: 6.353138}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.160431, y: 0.9201584}
+  m_EdgeRadius: 0
 --- !u!1 &1748006317
 GameObject:
   m_ObjectHideFlags: 0
@@ -81596,6 +82202,19 @@ Transform:
   - {fileID: 77935168}
   - {fileID: 840187428}
   - {fileID: 350217290}
+  - {fileID: 2135236627}
+  - {fileID: 250508510}
+  - {fileID: 1237657371}
+  - {fileID: 1972633681}
+  - {fileID: 2088245166}
+  - {fileID: 780678210}
+  - {fileID: 1740802333}
+  - {fileID: 2018328514}
+  - {fileID: 728466801}
+  - {fileID: 937829150}
+  - {fileID: 1890123596}
+  - {fileID: 1561225216}
+  - {fileID: 870835747}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81909,6 +82528,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1890123595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890123596}
+  - component: {fileID: 1890123598}
+  - component: {fileID: 1890123597}
+  m_Layer: 0
+  m_Name: DialogueBox17
+  m_TagString: Yellow
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1890123596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890123595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890123597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890123595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: I can't go back!?  How am I supposed to get out?
+  lastOne: 0
+--- !u!61 &1890123598
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890123595}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 319.1264, y: 4.455776}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0368652, y: 4.559822}
+  m_EdgeRadius: 0
 --- !u!1001 &1943146212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81974,6 +82665,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bc62de62e2df24f81f849796a664e1, type: 3}
+--- !u!1 &1972633680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972633681}
+  - component: {fileID: 1972633683}
+  - component: {fileID: 1972633682}
+  m_Layer: 0
+  m_Name: DialogueBox10
+  m_TagString: Blue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1972633681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972633680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1972633682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972633680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: I wonder how far this goes...
+  lastOne: 0
+--- !u!61 &1972633683
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972633680}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 130.02415, y: 14.696548}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.6434326, y: 3.9965057}
+  m_EdgeRadius: 0
 --- !u!1001 &1973987546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82121,6 +82884,150 @@ Transform:
   m_Father: {fileID: 1752783504}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2018328513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018328514}
+  - component: {fileID: 2018328516}
+  - component: {fileID: 2018328515}
+  m_Layer: 0
+  m_Name: DialogueBox14
+  m_TagString: Green
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2018328514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018328513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2018328515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018328513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: Look out below!
+  lastOne: 0
+--- !u!61 &2018328516
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018328513}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 274.91797, y: 19.711777}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6295166, y: 3.6908417}
+  m_EdgeRadius: 0
+--- !u!1 &2088245165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2088245166}
+  - component: {fileID: 2088245168}
+  - component: {fileID: 2088245167}
+  m_Layer: 0
+  m_Name: DialogueBox11
+  m_TagString: Blue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2088245166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088245165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2088245167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088245165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: I can hear another.
+  lastOne: 0
+--- !u!61 &2088245168
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088245165}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 145.9652, y: 15.069439}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7958679, y: 6.0474014}
+  m_EdgeRadius: 0
 --- !u!1 &2110424246
 GameObject:
   m_ObjectHideFlags: 0
@@ -82192,6 +83099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: I can see and hear something up ahead.  But what is it?
+  lastOne: 0
 --- !u!1 &2123321501
 GameObject:
   m_ObjectHideFlags: 0
@@ -82436,6 +83344,78 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!1 &2135236626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135236627}
+  - component: {fileID: 2135236629}
+  - component: {fileID: 2135236628}
+  m_Layer: 0
+  m_Name: DialogueBox7
+  m_TagString: Purple
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2135236627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135236626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.5, y: -73.8, z: 44.836452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790530985}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135236628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135236626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d715ca164005478a54dc7f90584d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: Hey!  This is kind of fun!
+  lastOne: 0
+--- !u!61 &2135236629
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135236626}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 25.143784, y: 8.22319}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8517761, y: 3.6499634}
+  m_EdgeRadius: 0
 --- !u!1001 &1178632818902818803
 PrefabInstance:
   m_ObjectHideFlags: 0

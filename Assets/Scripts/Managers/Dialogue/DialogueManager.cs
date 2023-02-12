@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator FadeOut()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         float textAlpha = 1f;
 
         for (float t = 0f; t < 1f; t += Time.deltaTime / fadeTime)
