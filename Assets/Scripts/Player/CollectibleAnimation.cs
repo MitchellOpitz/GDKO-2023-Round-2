@@ -45,7 +45,7 @@ public class CollectibleAnimation : MonoBehaviour
         {
             if (t < (animTime - .75f))
             {
-                particles.rateOverTime = (t / animTime) * 1000f;
+                particles.rateOverTime = (t / animTime) * 500f;
             } else
             {
                 particles.rateOverTime = 0f;

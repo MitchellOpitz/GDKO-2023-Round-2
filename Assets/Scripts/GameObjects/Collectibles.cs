@@ -48,6 +48,7 @@ public class Collectibles : MonoBehaviour
         if (collision.tag == "Player")
         {
             audioSource.Stop();
+            FindObjectOfType<AudioManager>().PlaySound("Collectible");
             FindObjectOfType<CollectibleAnimation>().StartAnimation(audioTrack, startPosition);
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
